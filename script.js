@@ -1,6 +1,6 @@
 // DATA LOGIN (bisa kamu ganti)
-const USERNAME = "admin";
-const PASSWORD = "1234";
+const USERNAME = "dilianganteng";
+const PASSWORD = "1314";
 
 // Ambil element
 const loginBtn = document.getElementById("loginBtn");
