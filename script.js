@@ -24,3 +24,4 @@ function logout() {
 if(localStorage.getItem("login") === "true") {
     showPortfolio();
 }
+localStorage.clear();
