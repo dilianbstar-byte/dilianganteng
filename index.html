@@ -4,7 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dilian Portfolio</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* LOGIN */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #00c6ff;
+    color: white;
+}
+
+/* PORTFOLIO */
+.hidden {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+.box {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.card-project {
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+</style>
+
 </head>
 <body>
 
@@ -14,7 +93,7 @@
         <h2>Login 🔐</h2>
         <input type="text" id="user" placeholder="Username">
         <input type="password" id="pass" placeholder="Password">
-        <button id="loginBtn">Masuk</button>
+        <button onclick="login()">Masuk</button>
     </div>
 </div>
 
@@ -23,7 +102,7 @@
 
     <nav>
         <h2>Dilian.dev</h2>
-        <button id="logoutBtn">Logout</button>
+        <button onclick="logout()">Logout</button>
     </nav>
 
     <header>
@@ -33,11 +112,34 @@
 
     <section class="box">
         <h2>About Me</h2>
-        <p>Saya tertarik di dunia coding, AI, dan teknologi masa depan.</p>
+        <p>Saya adalah siswa yang tertarik di dunia teknologi, coding, dan AI.</p>
+        <p>Saya ingin menjadi pengusaha sukses di bidang teknologi.</p>
+    </section>
+
+    <section class="box">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>UI/UX Design</li>
+            <li>AI Tools</li>
+        </ul>
+    </section>
+
+    <section class="box">
+        <h2>Projects</h2>
+
+        <div class="card-project">
+            <h3>Portfolio Website</h3>
+            <p>Membuat website portfolio modern.</p>
+        </div>
+
+        <div class="card-project">
+            <h3>Login System</h3>
+            <p>Sistem login sederhana dengan JavaScript.</p>
+        </div>
+
     </section>
 
 </div>
-
-<script src="script.js"></script>
 </body>
 </html>
