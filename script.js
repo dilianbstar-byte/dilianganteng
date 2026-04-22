@@ -3,7 +3,7 @@ function login() {
     const pass = document.getElementById("pass").value;
 
     if(user === "dilian" && pass === "1314") {
-        localStorage.setItem("login", "true");
+        localStorage.setItem("login", "true");  
         showPortfolio();
     } else {
         alert("Login gagal!");
