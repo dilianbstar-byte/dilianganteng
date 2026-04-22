@@ -93,7 +93,7 @@ header {
         <h2>Login 🔐</h2>
         <input type="text" id="user" placeholder="Username">
         <input type="password" id="pass" placeholder="Password">
-        <button onclick="login()">Masuk</button>
+        <button id="loginBtn">Masuk</button>
     </div>
 </div>
 
@@ -102,7 +102,7 @@ header {
 
     <nav>
         <h2>Dilian.dev</h2>
-        <button onclick="logout()">Logout</button>
+        <button id="logoutBtn">Logout</button>
     </nav>
 
     <header>
@@ -141,5 +141,38 @@ header {
     </section>
 
 </div>
+
+<script>
+const loginBtn = document.getElementById("loginBtn");
+const logoutBtn = document.getElementById("logoutBtn");
+
+loginBtn.addEventListener("click", () => {
+    const user = document.getElementById("user").value;
+    const pass = document.getElementById("pass").value;
+
+    if(user === "admin" && pass === "1234") {
+        localStorage.setItem("login", "true");
+        showPortfolio();
+    } else {
+        alert("Username atau password salah!");
+    }
+});
+
+function showPortfolio() {
+    document.getElementById("loginPage").classList.add("hidden");
+    document.getElementById("portfolioPage").classList.remove("hidden");
+}
+
+logoutBtn.addEventListener("click", () => {
+    localStorage.removeItem("login");
+    location.reload();
+});
+
+// auto login
+if(localStorage.getItem("login") === "true") {
+    showPortfolio();
+}
+</script>
+
 </body>
 </html>
