@@ -1,3 +1,4 @@
+<style>
 * {
     margin: 0;
     padding: 0;
@@ -10,72 +11,68 @@ body {
     color: white;
 }
 
-/* NAVBAR */
+/* LOGIN */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #00c6ff;
+    color: white;
+}
+
+/* PORTFOLIO */
+.hidden {
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 20px;
     background: rgba(0,0,0,0.4);
 }
 
-/* HEADER */
 header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px;
 }
 
-header h1 {
-    font-size: 36px;
-}
-
-header p {
-    opacity: 0.8;
-    margin-top: 5px;
-}
-
-/* BOX */
 .box {
     background: rgba(255,255,255,0.1);
-    padding: 25px;
+    padding: 20px;
     border-radius: 15px;
     margin: 20px auto;
-    max-width: 850px;
-    line-height: 1.7;
+    max-width: 800px;
 }
 
-/* LIST */
-.box ul {
-    padding-left: 20px;
-}
-
-.box li {
-    margin: 8px 0;
-}
-
-/* PROJECT */
 .card-project {
     background: rgba(255,255,255,0.15);
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
-    transition: 0.3s;
 }
-
-.card-project:hover {
-    transform: translateY(-5px);
-}
-
-/* BUTTON */
-button {
-    background: red;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-}
-
-/* HIDDEN */
-.hidden {
-    display: none;
-}
+</style>
