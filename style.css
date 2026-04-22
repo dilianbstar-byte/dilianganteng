@@ -10,78 +10,12 @@ body {
     color: white;
 }
 
-/* LOGIN */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.card {
-    background: rgba(255,255,255,0.12);
-    padding: 40px;
-    border-radius: 20px;
-    backdrop-filter: blur(12px);
-    width: 320px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-.card input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-}
-
-.card button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.card button:hover {
-    transform: scale(1.05);
-}
-
-/* PORTFOLIO */
-.hidden {
-    display: none;
-}
-
-.portfolio {
-    padding-bottom: 40px;
-}
-
 /* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px 40px;
     background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(10px);
-}
-
-nav h2 {
-    font-size: 22px;
-}
-
-nav button {
-    background: red;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
 }
 
 /* HEADER */
@@ -92,35 +26,33 @@ header {
 
 header h1 {
     font-size: 36px;
-    margin-bottom: 10px;
 }
 
 header p {
     opacity: 0.8;
+    margin-top: 5px;
 }
 
-/* BOX SECTION (FIX BAGIAN KOSONG) */
+/* BOX */
 .box {
-    background: rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.1);
     padding: 25px;
     border-radius: 15px;
     margin: 20px auto;
-    max-width: 900px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    line-height: 1.6;
+    max-width: 850px;
+    line-height: 1.7;
 }
 
 /* LIST */
 .box ul {
-    margin-top: 10px;
     padding-left: 20px;
 }
 
 .box li {
-    margin-bottom: 8px;
+    margin: 8px 0;
 }
 
-/* CARD PROJECT */
+/* PROJECT */
 .card-project {
     background: rgba(255,255,255,0.15);
     padding: 15px;
@@ -131,20 +63,19 @@ header p {
 
 .card-project:hover {
     transform: translateY(-5px);
-    background: rgba(255,255,255,0.25);
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    nav {
-        padding: 15px;
-    }
+/* BUTTON */
+button {
+    background: red;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
 
-    .box {
-        margin: 15px;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
+/* HIDDEN */
+.hidden {
+    display: none;
 }
