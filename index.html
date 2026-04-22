@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dilian Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="container" id="loginPage">
+    <div class="card login-card">
+        <h2>Welcome Back 👋</h2>
+        <p>Login untuk masuk ke portfolio</p>
+
+        <input type="text" id="user" placeholder="Username">
+        <input type="password" id="pass" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div class="portfolio hidden" id="portfolioPage">
+
+    <nav>
+        <h2>Dilian</h2>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+    <header>
+        <h1>Hi, I'm Dilian 👨‍💻</h1>
+        <p>Future Tech Entrepreneur | SMK Telkom</p>
+    </header>
+
+    <section class="grid">
+        <div class="box">
+            <h3>About Me</h3>
+            <p>Saya fokus di coding, AI, dan ingin punya bisnis PC gaming.</p>
+        </div>
+
+        <div class="box">
+            <h3>Skills</h3>
+            <p>HTML, CSS, JavaScript, UI Design, AI Tools</p>
+        </div>
+
+        <div class="box">
+            <h3>Projects</h3>
+            <p>Website Portfolio & Sistem Login</p>
+        </div>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
